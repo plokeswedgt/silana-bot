@@ -9,7 +9,7 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
   if (!vid) throw 'لم يتم العثور عليه، حاول عكس العنوان والمؤلف'
   let { title, description, thumbnail, videoId, durationH, viewH, publishedTime } = vid
   const url = 'https://www.youtube.com/watch?v=' + videoId
-let vap = `*〔 Y O U T U B E P L A Y 〕*
+let vap = `*LIST TO SONGS *
 
 *عنوان المقطع:* ${title}
 *رابط المقطع:* ${url}
@@ -48,7 +48,7 @@ thumbnail: await(await conn.getFile(thumbnail)).data
 }
 handler.help = ['song','play']
 handler.tags = ['downloader']
-handler.command = /^song|play$/i
+handler.command = /^mp3songs|songs3/i
 
 export default handler
 
