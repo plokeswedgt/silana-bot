@@ -8,5 +8,5 @@ let handler = async (m, { conn }) => {
 };
 handler.command = ["ping"];
 handler.help = ["ping"]
-handler.tags = ["infobot"]
+handler.tags = ["بينغ"]
 export default handler;
